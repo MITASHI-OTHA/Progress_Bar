@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/loading-bar.css"/>
+	<script type="text/javascript" src="js/loading-bar.js"> </script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<style type="text/css">
+	.panel{
+		border: 1px #000 solid;
+	    padding: 1em;
+	    width: 500px;
+	    margin:1em;
+	}
+	#bloc{
+	 		width: 400px;
+	 		height: 10px;
+	 		border: 1px #000 solid;
+	 		margin-top: 1em;
+	 		border-radius: 5px 5px 5px 5px;
+	 	}
+	 	#load{
+	 		width: 0px;
+	 		height: 10px;
+	 		background: linear-gradient(135deg, rgba(0, 125, 255, 0.11), #167ac6);
+	 		border-radius: 5px 5px 5px 5px;
+	 		transition: width 2s;
+	 	}
+	</style>
+</head>
+<body>
+<div class="panel">
+	<form>
+		<label for="img">Upload 1. </label> <input id="img" type="file" name="image" accept="image/*"></input>
+	</form>
+<div id="myItem1" data-preset="bubble" data-preset="fan" class="ldBar label-center"></div><br>
+</div>
+
+<div class="panel">
+	<form id="form2">
+	<label for="img2">Upload 2. </label> <input id="img2" type="file" name="image" accept="image/*"></input>
+</form>
+<div id="myItem2" data-preset="fan" class="ldBar label-center"></div><br>
+</div>
+<div class="panel">
+<form id="form3">
+	<label for="img3">Upload 3. </label> <input id="img3" type="file" name="image" accept="image/*"></input>
+</form> <br>
+<div id="myItem3" data-preset="energy" class="ldBar label-center"></div><br>	
+</div>
+
+<div class="panel">
+<form id="form4">
+	<label for="img4">Upload 4. </label> <input id="img4" type="file" name="image" accept="image/*"></input>
+</form> <br>
+<div id="myItem4" 
+  data-type="fill"
+  data-path="M10 10L90 10L90 90L10 90Z"
+  class="ldBar"
+  data-fill="data:ldbar/res,bubble(#248,#fff,50,1)"
+></div>
+
+<br>	
+</div>
+<div class="panel">
+	<form id="maform">
+		<label for="img5">Upload 5.</label> <input type="file" name="img" id="img5" accept="image/*"></input>
+	</form>
+	<div id="bloc"> <div id="load"></div> </div>
+	<p id="p"></p>	
+</div>
+	<script src="js/load1.js"></script>
+	<script src="js/load2.js"></script>
+	<script src="js/load3.js"></script>
+	<script src="js/load4.js"></script>
+	<script src="js/load5.js"></script>
+</body>
+</html>
